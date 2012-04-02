@@ -33,5 +33,8 @@ function drush_provision_provision_devshop_revert() {
 
   // Clear the whole cache, just in case.
   provision_backend_invoke($target, 'cc all');
+  
+  // Clear the whole cache again, just in case.
+  provision_backend_invoke($target, 'cc all');
 }
 
